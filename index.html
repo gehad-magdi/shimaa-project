@@ -112,16 +112,29 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="Adress" type="text" placeholder="Your Adress *" required="required" data-validation-required-message="Please enter your adress." />
+                                <input class="form-control" id="adress" type="text" placeholder="Your Adress *" required="required" data-validation-required-message="Please enter your adress." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="Moving" type="text" placeholder="Your Moving To*" required="required" data-validation-required-message="Please enter Moving To." />
+                                <input class="form-control" id="moving" type="text" placeholder="Your Moving To*" required="required" data-validation-required-message="Please enter Moving To." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="Postal Code/Zip" type="text" placeholder="Your Postal *" required="required" data-validation-required-message="Please enter your postal." />
+                                <input class="form-control" id="Postal" type="text" placeholder="Your Postal Code/Zip *" required="required" data-validation-required-message="Please enter your postal Code/Zip." />
                                 <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <select name="CT_Main_0$ctl16$drpValue" onchange="javascript:setTimeout('__doPostBack(\'CT_Main_0$ctl16$drpValue\',\'\')', 0)" id="CT_Main_0_ctl16_drpValue" style="width:100%;">
+                                    <option selected="selected" value="">Concerning -- select --</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Moving Service">Moving Service</option>
+                                    <option value="Shipment">Shipment</option>
+                                    <option value="Claims">Claims</option>
+                                    <option value="Billing">Billing</option>
+                                    <option value="Website">Website</option>
+                                    <option value="Orders">Orders</option>
+                                    <option value="FORMBUILDER_DROPDOWN_OTHER">Other...</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -140,6 +153,84 @@
                             <div class="form-group form-group-textarea mb-md-0">
                                 <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
+                            </div>
+                             <div class="form-group">
+                                <select name="CT_Main_0$ctl10$drpValue" onchange="javascript:setTimeout('__doPostBack(\'CT_Main_0$ctl10$drpValue\',\'\')', 0)" id="CT_Main_0_ctl10_drpValue" style="width:100%;">
+                                    <option selected="selected" value="">Province/State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AB">Alberta</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="AA">Armed Forces-AA</option>
+                                    <option value="AE">Armed Forces-AE</option>
+                                    <option value="AP">Armed Forces-AP</option>
+                                    <option value="BC">British Columbia</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="GU">Guam</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MB">Manitoba</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NB">New Brunswick</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NL">Newfoundland and Labrador</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="MP">Northern Mariana Islands</option>
+                                    <option value="NT">Northwest Territories</option>
+                                    <option value="NS">Nova Scotia</option>
+                                    <option value="NU">Nunavut</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="ON">Ontario</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="PE">Prince Edward Island</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="QC">Quebec</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SK">Saskatchewan</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UM">United States Minor Outlying Islands</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VI">Virgin Islands</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="YT">Yukon Territory</option>
+                                </select>
                             </div>
                         </div>
                 <div class="col-md-12 text-center">

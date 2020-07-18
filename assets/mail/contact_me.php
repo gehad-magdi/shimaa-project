@@ -4,6 +4,12 @@ if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
    empty($_POST['message'])   ||
+   empty($_POST['adress'])      ||
+   empty($_POST['moving'])      ||
+   empty($_POST['Postal'])      ||
+   empty($_POST['CT_Main_0_ctl16_drpValue'])      ||
+   empty($_POST['City'])      ||
+   empty($_POST['CT_Main_0_ctl10_drpValue'])      ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
    echo "No arguments Provided!";
