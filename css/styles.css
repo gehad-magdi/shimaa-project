@@ -3510,7 +3510,10 @@ input[type=button].btn-block {
   min-height: 1.5rem;
   padding-left: 1.5rem;
 }
-
+#CT_Main_0_ctl16_drpValue,#CT_Main_0_ctl10_drpValue{
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
 .custom-control-inline {
   display: inline-flex;
   margin-right: 1rem;
@@ -3524,7 +3527,7 @@ input[type=button].btn-block {
   height: 1.25rem;
   opacity: 0;
 }
-.custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before{
   color: #fff;
   border-color: #f4623a;
   background-color: #f4623a;
