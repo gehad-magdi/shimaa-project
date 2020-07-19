@@ -3520,6 +3520,7 @@ input[type=button].btn-block {
 #CT_Main_0_ctl16_drpValue,#CT_Main_0_ctl10_drpValue{
   border: 1px solid #ddd;
   border-radius: 2px;
+  padding: 10px;
 }
 .custom-control-inline {
   display: inline-flex;
