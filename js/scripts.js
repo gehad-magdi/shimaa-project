@@ -72,6 +72,12 @@
         var name = $("input#name").val();
         var email = $("input#email").val();
         var phone = $("input#phone").val();
+        var adress = $("input#adress").val();
+        var moving = $("input#moving").val();
+        var Postal = $("input#Postal").val();
+        var CT_Main_0_ctl16_drpValue = $("input#CT_Main_0_ctl16_drpValue").val();
+        var City = $("input#City").val();
+        var CT_Main_0_ctl10_drpValue = $("input#CT_Main_0_ctl10_drpValue").val();
         var message = $("textarea#message").val();
         var firstName = name; // For Success/Failure Message
         // Check for white space in name for Success/Fail message
@@ -81,12 +87,18 @@
         $this = $("#sendMessageButton");
         $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
         $.ajax({
-            url: "/assets/mail/contact_me.php",
+            url: "./assets/mail/contact_me.php",
             type: "POST",
             data: {
                 name: name,
                 phone: phone,
                 email: email,
+                adress: adress,
+                moving: moving,
+                Postal: Postal,
+                CT_Main_0_ctl16_drpValue: CT_Main_0_ctl16_drpValue,
+                City: City,
+                CT_Main_0_ctl10_drpValue: CT_Main_0_ctl10_drpValue,
                 message: message,
             },
             cache: false,
@@ -140,5 +152,7 @@ $('a[data-toggle="tab"]').click(function (e) {
     e.preventDefault();
     $(this).tab("show");
 });
-
+$("#name").focus(function () {
+  $("#success").html("");
+});
 })(jQuery); 
